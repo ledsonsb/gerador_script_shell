@@ -1,0 +1,13 @@
+  GNU nano 5.4                      criar_script
+#!/usr/bin/env bash
+
+header="#!/usr/bin/env bash
+
+#-------------------------------------
+#Informações do programa:
+#Autor:
+#-------------------------------------
+"
+echo "$header" > $1
+chmod +x $1
+nano $1
